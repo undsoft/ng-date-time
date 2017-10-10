@@ -821,6 +821,7 @@ var DateTimePickerComponent = (function () {
     DateTimePickerComponent.prototype.setSelectedTime = function (val) {
         var done;
         var selected;
+        var event = event || window.event;
         if (this.isSingleSelection()) {
             selected = this.setTimeOnSingleSelection(val);
         }
